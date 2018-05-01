@@ -1,7 +1,14 @@
-// Customize Bootstrap variables here
-$body-bg: #2B2B2B;
-$body-color: #D8D8D8;
+@import "variables";
 
-$font-family-sans-serif: "Fira Sans", Arial, sans-serif;
+// Bootstrap Customization
+$body-bg: $my-dark;
+$body-color: $my-primary;
+$primary: $my-primary;
+$secondary: $my-secondary;
+$dark: $my-dark;
+$font-family-sans-serif: "Fira Mono", Arial, sans-serif;
 
+@import url('https://use.fontawesome.com/releases/v5.0.10/css/brands.css');
+@import url('https://use.fontawesome.com/releases/v5.0.10/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css');
 @import "~bootstrap/scss/bootstrap";

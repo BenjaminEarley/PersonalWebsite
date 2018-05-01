@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -37,12 +38,15 @@ module.exports = {
     new GoogleFontsPlugin({
       fonts: [
         {
-          family: "Fira Sans",
+          family: "Fira Mono",
           variants: ["400"]
         }
       ]
     }),
-    new UglifyJsPlugin()
+    new UglifyJsPlugin(),
+    new CopyWebpackPlugin([
+      { from: 'static' }
+    ])
   ],
   resolve: {
     extensions: ['.js'],
@@ -72,7 +76,7 @@ module.exports = {
           }, {
             loader: 'postcss-loader', // Run post css actions
             options: {
-              plugins: function() { // post css plugins, can be exported to postcss.config.js
+              plugins: function () { // post css plugins, can be exported to postcss.config.js
                 return [require('precss'), require('autoprefixer')];
               }
             }
