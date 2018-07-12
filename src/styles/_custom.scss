@@ -8,7 +8,8 @@ $secondary: $my-secondary;
 $dark: $my-dark;
 $font-family-sans-serif: "Fira Mono", Arial, sans-serif;
 
-@import url('https://use.fontawesome.com/releases/v5.0.10/css/brands.css');
-@import url('https://use.fontawesome.com/releases/v5.0.10/css/solid.css');
-@import url('https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css');
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/brands.css");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/solid.css");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
 @import "~bootstrap/scss/bootstrap";
