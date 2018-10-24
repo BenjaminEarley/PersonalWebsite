@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=qa webpack --mode development",
     "build:qa": "cross-env NODE_ENV=qa webpack --mode development",
-    "build:prod": "cross-env NODE_ENV=prod webpack --mode development",
+    "build:prod": "cross-env NODE_ENV=prod webpack --mode production",
     "watch": "cross-env NODE_ENV=qa webpack --watch --mode development",
     "start": "cross-env NODE_ENV=qa webpack-dev-server --mode development --open"
   },
