@@ -1,6 +1,34 @@
 @import "custom";
 @import "variables";
 
+body {
+  background-color: $my-background-dark
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
+
+a, h1, h3, ul, li {
+  color: $my-primary-dark
+}
+
+.btn-dark {
+  background-color: $my-background-dark;
+  border-color: $my-background-dark;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #181818;
+  border-color: #121212;
+}
+
 .header {
   text-align: center;
   padding-top: 2rem;
@@ -16,9 +44,45 @@
 }
 
 .fab, .fas {
-  color: $my-primary;
+  color: $my-primary-dark;
 }
 
-a {
-  text-decoration: underline;
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: $my-background-light
+  }
+  a:hover {
+    color: #787878;
+    text-decoration: underline;
+  }
+  
+  a, h1, h3, ul, li {
+    color: $my-primary-light
+  }
+  
+  .btn-dark {
+    background-color: $my-background-light;
+    border-color: $my-background-light;
+  }
+  
+  .btn-dark:hover {
+    color: #fff;
+    background-color: #E6E6E6;
+    border-color: #E6E6E6;
+  }
+
+  .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus,  .btn-dark:focus, .btn-dark.focus {
+    box-shadow: 0 0 0 0.2rem #f2f2f280;
+  }
+
+
+  .btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #E6E6E6;
+    border-color: #E6E6E6;
+  } 
+
+  .fab, .fas {
+    color: $my-primary-light;
+  }
 }
