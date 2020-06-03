@@ -53,7 +53,11 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new UglifyJsPlugin(),
-    new CopyWebpackPlugin([{ from: "static" }])
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'static' }
+      ],
+    }),
   ],
   resolve: {
     extensions: [".js"],
