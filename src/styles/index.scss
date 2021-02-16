@@ -26,13 +26,21 @@ h2 {
   font-weight: 400;
 }
 
-header h1 {
-  margin: 0;
+a {
+  color: #37966f;
+}
+
+a:visited {
+  color: #356859;
 }
 
 main {
   display: flex;
   flex-flow: column;
+}
+
+header h1 {
+  margin: 0;
 }
 
 main img {
