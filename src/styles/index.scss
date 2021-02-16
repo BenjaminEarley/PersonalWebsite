@@ -59,8 +59,22 @@ article section {
 }
 
 @supports (display: grid) {
+  body {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    height: 100vh;
+    margin: 0 2rem;
+  }
+
+  body main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
   @media (min-width: 1024px) {
-    main {
+    body main {
       display: grid;
       grid-template-columns: 1fr minmax(100px, 400px) min-content;
       gap: 0 1rem;
