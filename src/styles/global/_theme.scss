@@ -1,0 +1,30 @@
+@import 'values/color';
+@import 'values/typeface';
+
+$primary-color: $green;
+
+$secondary-color: $orange;
+
+$background-color: $light-tan;
+
+$surface-color: $light-green;
+
+$primary-typeface: $helvetica;
+$secondary-typeface: $georgia;
+
+// styles below //
+
+%headline1 {
+  font-family: $secondary-typeface;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 3rem;
+  color: $secondary-color;
+};
+
+%headline2 {
+  font-family: $primary-typeface;
+  font-size: 3rem;
+  font-weight: 400;
+  color: $secondary-color;
+};
