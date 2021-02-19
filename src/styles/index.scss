@@ -22,7 +22,7 @@ a {
 }
 
 a:visited {
-  color: #356859;
+  color: $primary-color;
 }
 
 main {
@@ -48,14 +48,14 @@ main h2 {
 }
 
 main article {
-  color: #356859;
+  color: $primary-color;
 }
 
 article section {
   margin: 16px 0;
   padding: 16px;
   max-width: 540px;
-  background-color: #b9e4c9;
+  background-color: $surface-color;
 }
 
 @supports (display: grid) {
