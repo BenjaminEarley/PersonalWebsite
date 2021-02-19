@@ -1,5 +1,5 @@
-@import 'global/variables';
 @import 'global/resets';
+@import 'global/theme';
 
 html {
   font-family: Helvetica, sans-serif;
@@ -12,11 +12,8 @@ body {
 }
 
 h1 {
-  font-family: georgia, sans-serif;
-  font-style: italic;
-  font-weight: 200;
+  @extend %headline1;
   text-transform: uppercase;
-  font-size: 3rem;
   line-height: 1.2;
 }
 
