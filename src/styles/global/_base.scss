@@ -1,0 +1,9 @@
+@import 'resets';
+@import 'theme';
+@import 'styles';
+
+html {
+  font-family: $primary-typeface;
+  background: $background-color;
+  color: $secondary-color;
+}
